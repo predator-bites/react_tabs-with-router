@@ -9,7 +9,8 @@ export const Root = () => (
       <Route path="/" element={<App />}>
         <Route index element={<HomeSection />} />
         <Route path="tabs">
-          <Route path=":tabId?" element={<Tabs />} />
+          <Route index element={<Tabs />} />
+          <Route path=":tabId" element={<Tabs />} />
         </Route>
         <Route path="home" element={<Navigate to={'..'} />} />
         <Route path="*" element={<p className="title">Page not found</p>} />

@@ -9,7 +9,7 @@ export const App: React.FC = () => {
   const pathName = useLocation().pathname;
 
   return (
-    <html className="has-navbar-fixed-top">
+    <>
       {/* Also requires <html class="has-navbar-fixed-top"> */}
       <nav
         className="navbar is-light is-fixed-top is-mobile has-shadow"
@@ -38,6 +38,6 @@ export const App: React.FC = () => {
       <div className="section">
         <Outlet />
       </div>
-    </html>
+    </>
   );
 };
